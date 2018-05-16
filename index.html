@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- jQueryの読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <!-- トップコンテンツ -->
+    <header>
+      <div class="container">
+        <div class="top-wrapper">
+          My Portfolio
+          <div class="menu-list">
+            <a href="#about1">About</a>
+            <a href="#info">Info</a>
+            <a href="#my-works">Works</a>
+            <a href="#contacts">Contacts</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- 自己紹介 アコーディオン-->
+    <div id="about1" class="about">
+      <div class="container">
+        <h2>自己紹介</h2>
+        <div class="accordion">
+          <img src="me.png">
+          <ul id="about-list">
+            <li class="about-list-item">
+              <h3 class="question">はじめまして！</h3>
+              <span>+</span>
+              <div class="answer">
+                <p>　動物に囲まれて暮らしたいです。あと、ロボットが好きです。最近すごいと思ったのは、BostonDynamics社のアトラスです。動きが凄すぎます。<br>　２０１７年２月からオンライン学習サービスを利用してプログラミング等を勉強しています。今年に入ってからは自分で一から制作することにもチャレンジしています。<br>　好きなゲームはドラクエ（特に3, 5, 8, 11）、ポポロクロイス物語、どうぶつの森です。</p>
+              </div>
+            </li>
+            <li class="about-list-item">
+              <h3 class="question">きっかけ</h3>
+              <span>+</span>
+              <div class="answer">
+                <p>　子供の頃から、自分の手で物を作るのが好きでした。パーツごとに作り、それらを組み合わせていく。調整しながらだんだんと形になっていく面白さは、アナログでもデジタルでも共通するところがあると感じます。<br>　プログラミングをはじめたきっかけは好奇心からでした。普段利用しているYoutubeやLine等はどのように作られているのか、自分でも何か作れるだろうかと思ったのです。<br>　初めに学習した言語/フレームワークがRuby/Ruby on Railsであった為か、一番興味があります。</p>
+              </div>
+            </li>
+            <li class="about-list-item">
+              <h3 class="question">目指す姿</h3>
+              <span>+</span>
+              <div class="answer">
+                <p>　未熟者なので、色々な経験をどんどん積みたいです。<br>　フロントエンドから、サーバーやインフラまで統括的に分かる・できるようになることを目指しています。誰かに喜んでもらえる、楽しんでもらえるようなものを優しく丁寧に作れる人になりたいです。</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 使える技術紹介 -->
+    <div id="info" class="langs-tools">
+      <div class="container">
+        <h2>言語/ツール</h2>
+        <div class="border">
+          <h3>学習済み＋実践経験あり</h3>
+          <p><span>●</span>HTML</p><p><span >●</span>CSS</p><p><span>●</span>Scss</p><p><span>●</span>JavaScript</p><p><span>●</span>jQuery</p><br><p><span>●</span>Ruby</p>
+          <p><span>●</span>PHP</p><p><span>●</span>MySQL</p><p><span>●</span>PDO</p><p><span>●</span>git</p><p><span>●</span>Github</p><p><span>●</span>Ruby on Rails</p><p><span>●</span>Apache</p><p><span>●</span>Linux(CentOS)</p><p><span>●</span>MacOS</p><p><span>●</span>Google Maps API</p><p><span>●</span>Docker</p><br>
+          <h3>学習済み（基礎知識）</h3>
+          <p><span>●</span>C</p><p><span>●</span>C++</p><p><span>●</span>Java</p><p><span>●</span>Python</p>
+        </div>
+      </div>
+    </div>
+    <!-- Works 一覧アコーディオン３つ -->
+    <div id="my-works" class="works">
+      <div class="container">
+        <h2>Works</h2>
+        <div class="work">
+          <div class="container-1">
+            <h2 class="ttl-1">01</h2>
+            <div class="inner-1">
+              <h3>Title01: 旅先紹介サイト（2018/05現在制作中）</h3>
+              <h3>内容</h3>
+              <p>　カスタマイズしたマップを埋め込み、マップ上の各リンクページ先で<br>　オリジナルのキャラクターたちが観光地案内をしてくれるというサイトです。<br>　『有名なのに意外と行ったことがない場所』をコンセプトにしています。</p>
+              <h3>使用言語/ツール</h3>
+              <p>　HTML5, CSS3, JavaScript, jQuery, Google Maps API</p>
+              <h3>学んだこと</h3>
+              <p>　□非同期通信の仕組み<br>　□ Google Maps APIの使い方とカスタマイズの仕方</p>
+            </div>
+          </div>
+          <div class="container-2">
+            <h2 class="ttl-2">02</h2>
+            <div class="inner-2">
+              <h3>Title02: Dockerを使用したキャラクター情報登録画面</h3>
+              <h3>内容</h3>
+              <p>　フォームに入力した情報をApacheとPHPでデータベースへ渡し、<br>　登録された情報を使って簡単な分析ができます。</p>
+              <h3>使用言語/ツール</h3>
+              <p>　　HTML5, PHP7.1, MySQL5.5, Docker, Bash</p>
+              <h3>学んだこと</h3>
+              <p>　□Docker-Composeでサーバーとデータベースの環境を作る<br>　□PDOでMySQLを操作する方法</p>
+            </div>
+          </div>
+          <div class="container-3">
+            <h2 class="ttl-3">03</h2>
+            <div class="inner-3">
+              <h3>Title03: Ruby on Railsで投稿サイト作成(オンライン学習)</h3>
+              <h3>内容</h3>
+              <p>　Twitte のような短文投稿ができるWebアプリです。<br>　Ruby on Railsチュートリアルも参考に読みながら学習しました。<br>　</p>
+              <h3>使用言語/ツール</h3>
+              <p>　HTML5, CSS3, Ruby2.4, Ruby on Rails5.0</p>
+              <h3>学んだこと</h3>
+              <p>　□MVCの仕組み<br>　□ログイン機能やユーザー登録機能の仕組み<br>　□不正投稿への対策</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer id="contacts">
+      <div class="container">
+        <h2>Contact</h2>
+        <h3>at</h3>
+        <p>mac312pro@gmail.com</p>
+        <!-- <p>or</p> -->
+        <!-- <a href="#"><i class="fab fa-github fa-3x"></i></a> -->
+      </div>
+    </footer>
+     <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
