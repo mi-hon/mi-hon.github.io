@@ -2,9 +2,11 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="responsive.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> -->
     <!-- jQueryの読み込み -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <title></title>
@@ -19,7 +21,7 @@
             <a href="#about1">About</a>
             <a href="#info">Info</a>
             <a href="#my-works">Works</a>
-            <a href="#contacts">Contacts</a>
+            <a href="#contacts">Contact</a>
           </div>
         </div>
       </div>
@@ -29,27 +31,29 @@
       <div class="container">
         <h2>自己紹介</h2>
         <div class="accordion">
-          <img src="me.png">
+          <img src="me1.png">
           <ul id="about-list">
             <li class="about-list-item">
               <h3 class="question">はじめまして！</h3>
               <span>+</span>
               <div class="answer">
-                <p>　動物に囲まれて暮らしたいです。あと、ロボットが好きです。最近すごいと思ったのは、BostonDynamics社のアトラスです。動きが凄すぎます。<br>　２０１７年２月からオンライン学習サービスを利用してプログラミング等を勉強しています。今年に入ってからは自分で一から制作することにもチャレンジしています。<br>　好きなゲームはドラクエ（特に3, 5, 8, 11）、ポポロクロイス物語、どうぶつの森です。</p>
+                <p>2017年の年明けからオンライン学習サービスを利用してプログラミング等を勉強しています。<br>今年に入ってからは自分で一から制作することにもチャレンジしています。</p>
+                <p>もふもふした動物が好きです。動画や写真を見て癒されています。<br>
+                最近すごいと思ったのは、BostonDynamics社のアトラスです。まるで人間のような動きです。</p><p>好きなゲームはドラクエ（特に3, 5, 8, 11）、ポポロクロイス物語、どうぶつの森です。</p>
               </div>
             </li>
             <li class="about-list-item">
               <h3 class="question">きっかけ</h3>
               <span>+</span>
               <div class="answer">
-                <p>　子供の頃から、自分の手で物を作るのが好きでした。パーツごとに作り、それらを組み合わせていく。調整しながらだんだんと形になっていく面白さは、アナログでもデジタルでも共通するところがあると感じます。<br>　プログラミングをはじめたきっかけは好奇心からでした。普段利用しているYoutubeやLine等はどのように作られているのか、自分でも何か作れるだろうかと思ったのです。<br>　初めに学習した言語/フレームワークがRuby/Ruby on Railsであった為か、一番興味があります。</p>
+                <p>子供の頃から、自分の手で物を作るのが好きでした。<br>パーツごとに作り、調整しながらそれらを組み合わせるとだんだん形になっていく面白さは、アナログでもデジタルでも共通するところがあると感じます。</p><p>プログラミングをはじめたきっかけは好奇心からでした。普段利用しているYoutubeやLineなどはどのように作られているのかな、私も何か作れたら楽しそうだなと思ったのです。<br>初めて学習した言語/フレームワークがRuby/Ruby on Railsであった為か、今も一番興味があります。</p>
               </div>
             </li>
             <li class="about-list-item">
               <h3 class="question">目指す姿</h3>
               <span>+</span>
               <div class="answer">
-                <p>　未熟者なので、色々な経験をどんどん積みたいです。<br>　フロントエンドから、サーバーやインフラまで統括的に分かる・できるようになることを目指しています。誰かに喜んでもらえる、楽しんでもらえるようなものを優しく丁寧に作れる人になりたいです。</p>
+                <p>見習いなので、色々な経験をどんどん積みたいです。</p><p>Web技術に特に関心があります。フロントエンドからサーバーやインフラ・データベースまで統括的に分かる・できるようになることを目指したいです。一部分を作るのにも、全体を把握しておくことが大事だと思うからです。</p><p>そして誰かに喜んでもらえる、楽しんでもらえるようなものを丁寧に作れる人になりたいです。</p>
               </div>
             </li>
           </ul>
@@ -79,11 +83,11 @@
             <div class="inner-1">
               <h3>Title01: 旅先紹介サイト（2018/05現在制作中）</h3>
               <h3>内容</h3>
-              <p>　カスタマイズしたマップを埋め込み、マップ上の各リンクページ先で<br>　オリジナルのキャラクターたちが観光地案内をしてくれるというサイトです。<br>　『有名なのに意外と行ったことがない場所』をコンセプトにしています。</p>
+              <p>カスタマイズしたマップを埋め込み、マップ上の各リンクページ先でオリジナルキャラクターたちが観光案内をしてくれるというサイトです。<br>『有名なのに意外と行ったことがない場所』をコンセプトにしています。</p>
               <h3>使用言語/ツール</h3>
-              <p>　HTML5, CSS3, JavaScript, jQuery, Google Maps API</p>
+              <p>HTML5, CSS3, JavaScript, jQuery, Google Maps API</p>
               <h3>学んだこと</h3>
-              <p>　□非同期通信の仕組み<br>　□ Google Maps APIの使い方とカスタマイズの仕方</p>
+              <p>□非同期通信の仕組み<br>□ Google Maps APIの使い方とカスタマイズの仕方<br>□レスポンシブデザインの作成方法</p>
             </div>
           </div>
           <div class="container-2">
@@ -91,11 +95,11 @@
             <div class="inner-2">
               <h3>Title02: Dockerを使用したキャラクター情報登録画面</h3>
               <h3>内容</h3>
-              <p>　フォームに入力した情報をApacheとPHPでデータベースへ渡し、<br>　登録された情報を使って簡単な分析ができます。</p>
+              <p>フォームに入力した情報をApacheとPHPでデータベースへ渡し、登録された情報を使って簡単な分析ができます。</p>
               <h3>使用言語/ツール</h3>
-              <p>　　HTML5, PHP7.1, MySQL5.5, Docker, Bash</p>
+              <p>HTML5, PHP7.1, MySQL5.5, Docker, Bash</p>
               <h3>学んだこと</h3>
-              <p>　□Docker-Composeでサーバーとデータベースの環境を作る<br>　□PDOでMySQLを操作する方法</p>
+              <p>□Docker-Composeでサーバーとデータベースの環境を作る<br>□PDOでMySQLを操作する方法</p>
             </div>
           </div>
           <div class="container-3">
@@ -103,11 +107,11 @@
             <div class="inner-3">
               <h3>Title03: Ruby on Railsで投稿サイト作成(オンライン学習)</h3>
               <h3>内容</h3>
-              <p>　Twitte のような短文投稿ができるWebアプリです。<br>　Ruby on Railsチュートリアルも参考に読みながら学習しました。<br>　</p>
+              <p>Twitte のような短文投稿ができるWebアプリです。<br>Ruby on Railsチュートリアルも参考に読みながら学習しました。<br></p>
               <h3>使用言語/ツール</h3>
-              <p>　HTML5, CSS3, Ruby2.4, Ruby on Rails5.0</p>
+              <p>HTML5, CSS3, Ruby2.4, Ruby on Rails5.0</p>
               <h3>学んだこと</h3>
-              <p>　□MVCの仕組み<br>　□ログイン機能やユーザー登録機能の仕組み<br>　□不正投稿への対策</p>
+              <p>□MVCの仕組み<br>□ログイン機能やユーザー登録機能の仕組み<br>□不正投稿への対策</p>
             </div>
           </div>
         </div>
@@ -123,6 +127,6 @@
         <!-- <a href="#"><i class="fab fa-github fa-3x"></i></a> -->
       </div>
     </footer>
-     <script type="text/javascript" src="script.js"></script>
+     <script type="text/javascript" src="script1.js"></script>
   </body>
 </html>

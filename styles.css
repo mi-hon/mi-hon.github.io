@@ -4,6 +4,7 @@
 a {
   display: inline-block;
   text-decoration: none;
+  font-size: 24px;
 }
 li {
   list-style: none;
@@ -15,7 +16,7 @@ h3 {
   font-size: 24px;
 }
 p {
-  font-size: 15px;
+  font-size: 18px;
 }
 body {
   width: 100%;
@@ -24,10 +25,10 @@ body {
   font-weight: 400;
   font-size: 15px;
   color: #888;
-  line-height: 1.5;
+  line-height: 1.8em;
 }
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   width: 100%;
   padding: 0 0px;
   margin: 0 auto;
@@ -39,18 +40,18 @@ header {
 }
 .top-wrapper {
   background-image: url(cat1.jpg);
+  background-size: contain;
   width: 100%;
   height: auto;
   font-size: 64px;
-  padding: 150px 0 120px 0;
+  padding: 200px 0 120px 0;
   color: #fff;
 }
 
 .menu-list a {
   color: #fff;
-  font-size: 24px;
-  padding: 64px 30px 50px 30px;
-  margin-top: 42px;
+  padding: 30px 30px 50px 30px;
+  margin-top: 72px;
 }
 /* ---------------------------- ---------------------------- */
 .about {
@@ -64,7 +65,7 @@ header {
   height: 20%;
   display: inline-block;
   border-radius: 50%;
-  border: 3px solid #888;
+  border: 2px solid #888;
 }
 
 .about-list-item {
@@ -73,11 +74,6 @@ header {
   position:relative;
   cursor:pointer;
   text-align: left;
-}
-
-.about-list-item h3 {
-
-  font-size: 24px;
 }
 
 .about-list-item span {
@@ -186,7 +182,7 @@ footer {
   color: #ccc;
 }
 footer h3 {
-  font-size: 24px;
+
 }
 
 /* .fab {
