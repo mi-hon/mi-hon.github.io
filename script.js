@@ -7,7 +7,7 @@ $(function() {
       'scrollTop': position
     }, 500,);
   });
-  //
+  // Aboutのアコーディオン
   $('.about-list-item').click(function() {
     var $answer = $(this).find('.answer');
     if ($answer.hasClass('open')) {
